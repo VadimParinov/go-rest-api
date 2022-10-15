@@ -19,6 +19,13 @@ func main() {
 	router := httprouter.New()
 	handler := user.NewHandler()
 	cfg := config.GetConfig()
+	//cfgMongo := cfg.MongoDB
+	//client, err := mongodb.NewClient(context.Background(), cfgMongo.Host, cfgMongo.Port, cfgMongo.Username, cfgMongo.Password, cfgMongo.Database, cfgMongo.AuthDB)
+	//if err != nil {
+	//	log.Fatal(err)
+	//}
+	//storage := db.NewStorage(client, cfgMongo.Collection)
+
 	log.Println("Registering handlers...")
 	handler.Register(router)
 	start(router, cfg)

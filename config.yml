@@ -4,3 +4,11 @@ listen:
   type: port
   bind_ip: 0.0.0.0
   port: 8080
+mongodb:
+  host: n2-c2-mongodb-clevercloud-customers.services.clever-cloud.com
+  port: 27017
+  database: b2grzhmpk837fcm
+  username: utksyuamnte8hbgoxdj7
+  password: GYZ79QmU0jUIVmuo7C8b
+  auth_db:
+  collection: users
